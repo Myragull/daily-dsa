@@ -380,3 +380,365 @@ while(i<=n){
 }
 return 0;
 }
+
+
+
+//  9
+//  D
+//  CD
+//  BCD
+//  ABCD
+
+#include<iostream>
+using namespace std;
+
+int main(){
+int n;
+cout<<"Enter a number :";
+cin>>n;
+int i=1;
+while(i<=n){
+    int j=1;
+    while(j<=i){
+        char ch='A'+n-1 -i+j;
+        cout<<ch;
+        j++;
+    }
+    cout<<endl;
+    i++;
+}
+return 0;
+}
+
+// 10
+//      *
+//     **
+//    ***
+//   ****
+//  *****
+
+#include<iostream>
+using namespace std;
+
+int main(){
+int n;
+cout<<"Enter a number : ";
+cin>>n;
+int i=1;
+while(i<=n){
+
+    int space = n-i;
+    while(space){
+        cout<<" ";
+        space--;
+    }
+
+    int j=1;
+    while(j<=i){
+        cout<<"*";
+        j++;
+    }
+
+    cout<<endl;
+    i++;
+}
+return 0;
+}
+
+// 11
+// ***
+// **
+// *
+
+#include<iostream>
+using namespace std;
+
+int main(){
+int n;
+cout<<"Enter a number : ";
+cin>>n;
+int i=1;
+while(i<=n){
+
+    int star = n-i+1;
+    int j=1;
+    while(j<=star){
+        cout<<"*";
+        j++;
+    }
+
+    cout<<endl;
+    i++;
+}
+return 0;
+}
+
+//  12
+//  ****
+//   ***
+//    **
+//     *
+
+#include<iostream>
+using namespace std;
+
+int main(){
+int n;
+cout<<"Enter a number : ";
+cin>>n;
+int i=1;
+while(i<=n){
+
+    int space = i-1;
+    while(space){
+        cout<<" ";
+        space--;
+    }
+
+    int j=1;
+    while(j<=n-i+1){
+        cout<<"*";
+        j++;
+    }
+
+    cout<<endl;
+    i++;
+}
+return 0;
+}
+
+//  13
+//  11111
+//   2222
+//    333
+//     44
+//      5
+
+#include<iostream>
+using namespace std;
+
+int main(){
+int n;
+cout<<"Enter a number : ";
+cin>>n;
+int i=1;
+while(i<=n){
+
+    int space = i-1;
+    while(space){
+        cout<<" ";
+        space--;
+    }
+
+    int j=1;
+    while(j<=n-i+1){
+        cout<<i;
+        j++;
+    }
+
+    cout<<endl;
+    i++;
+}
+return 0;
+}
+
+//  14
+//      1
+//     22
+//    333
+//   4444
+//  55555
+
+#include<iostream>
+using namespace std;
+
+int main(){
+int n;
+cout<<"Enter a number : ";
+cin>>n;
+int i=1;
+while(i<=n){
+
+    int space = n-i;
+    while(space){
+        cout<<" ";
+        space--;
+    }
+
+    int j=1;
+    while(j<=i){
+        cout<<i;
+        j++;
+    }
+
+    cout<<endl;
+    i++;
+}
+return 0;
+}
+
+// 15
+// 12345
+//  2345
+//   345
+//    45
+//     5
+
+#include<iostream>
+using namespace std;
+
+int main(){
+ int n;
+cout<<"Enter a number : ";
+cin>>n;
+int i=1;
+while(i<=n){
+
+    int space = i-1;
+    while(space){
+        cout<<" ";
+        space--;
+    }
+
+    int j=1;
+    while(j<=n-i+1){
+        cout<<j+i-1;
+        j++;
+    }
+
+    cout<<endl;
+    i++;
+}
+return 0;
+}
+
+// 16
+
+//   1
+//  23
+// 456
+
+#include<iostream>
+using namespace std;
+
+int main(){
+ int n;
+cout<<"Enter a number : ";
+cin>>n;
+
+int count =1;
+int i=1;
+while(i<=n){
+
+    int space = n-i;
+    while(space){
+        cout<<" ";
+        space--;
+    }
+
+    int j=1;
+    while(j<=i){
+        cout<<count;
+        count++;
+        j++;
+    }
+
+    cout<<endl;
+    i++;
+}
+return 0;
+}
+
+// 17
+//     1
+//    121
+//   12321
+//  1234321
+// 123454321
+
+#include<iostream>
+using namespace std;
+
+int main(){
+int n;
+cout << "Enter a number : ";
+cin >> n;
+
+int count = 1;
+int i = 1;
+while (i <= n)
+{
+    int space = n - i;
+    while (space)
+    {
+        cout << " ";
+        space--;
+    }
+
+    int j = 1;
+    while (j <= i)
+    {
+        cout << j;
+        j++;
+    }
+
+    int k = i - 1;
+    while (k <= i)
+    {
+        cout << i - k + 1;
+        k++;
+    }
+    cout << endl;
+    i++;
+}
+return 0;
+}
+
+// 18
+// 1234554321
+// 1234**4321
+// 123****321
+// 12******21
+// 1********1
+
+#include<iostream>
+using namespace std;
+
+int main(){
+int n;
+cout<<"Enter a number : ";
+cin>>n;
+
+int i=1;
+while(i<=n){
+
+    int j=1;
+    while(j<=n-i+1){
+        cout<<j;
+        j++;
+    }
+
+    int star=i-1;
+    while(star){
+        cout<<"*";
+        star--;
+    }
+
+    int star2=i-1;
+    while(star2){
+        cout<<"*";
+        star2--;
+    }
+
+       int start=j-1;
+         while(start){
+            cout<<start;
+            start--;
+         }
+
+    cout<<endl;
+    i++;
+}
+
+return 0;
+}
