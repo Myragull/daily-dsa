@@ -19,7 +19,13 @@ return 0;
 
 }
 
-                                       //    Pattern Questions
+
+
+
+
+
+
+            //    Pattern Questions
 // 1 print following pattern of loops
 
 // ****
@@ -46,6 +52,7 @@ i++;
 }
 
 
+
 // 2 : Print the following patterns:
 //  1 2 3 4
 //  1 2 3 4
@@ -69,6 +76,11 @@ cout<<endl;
 i++;
 }
 }
+
+
+
+
+
 
 // 3
 // 54321
@@ -96,6 +108,9 @@ i++;
 }
 }
 
+
+
+
 // 4
 //  1 2 3
 //  4 5 6
@@ -122,6 +137,8 @@ i++;
 }
 
 
+
+
 // 5
 //  *
 //  **
@@ -146,6 +163,8 @@ cout<<endl;
 i++;
 }
 }
+
+
 
 
 // 5
@@ -201,6 +220,8 @@ i++;
 }
 
 
+
+
 // 7
 // 1
 // 23
@@ -225,6 +246,7 @@ cout<<endl;
 i++;
 }
 }
+
 
 
 // 8
