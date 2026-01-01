@@ -205,7 +205,7 @@ int main(){
 }
 
 
-// finding element inside of array
+// finding sum of element inside of array
 
 #include<iostream>
 using namespace std;
@@ -233,4 +233,35 @@ int main(){
    sum(arr,size);
 
    return 0; 
+}
+
+
+//  reversing elements of array
+
+#include<iostream>
+using namespace std;
+
+void reverseArray(int arr[], int n){
+     int start=0;
+     int end=n-1;
+        while(start<=end){
+        swap(arr[start] , arr[end]);
+        start++;
+        end--;
+     }
+}
+
+void print(int arr[] , int n){
+    for(int i=0; i<=n-1; i++){
+        cout<<arr[i]<<" ";
+    }
+}
+
+int main(){
+    int arr[8]={1,2,5,1,7,3,8,5};
+
+    reverseArray(arr,8);
+    print(arr,8);
+
+    return 0;
 }
