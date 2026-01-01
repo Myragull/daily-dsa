@@ -65,6 +65,7 @@ return 0;
 }
 
 
+
 // 2 even or odd
 #include<iostream>
 using namespace std;
@@ -84,6 +85,10 @@ cin>>n  ;
 cout<<"Answer : "<<checker(n);
 return 0;
 }
+
+
+
+
 
 // 3
 
@@ -129,7 +134,7 @@ int main()
 }
 
 
-// 5 check whether prime or not
+// 4 check whether prime or not
 #include<iostream>
 using namespace std;
 bool isPrime(int n){
@@ -154,4 +159,24 @@ int main(){
         cout<<"Not a prime number";
     }
     return 0;
+}
+
+
+// array with functions 
+// in functions it is must to also gave the size of array in the parameter for iterations
+
+#include<iostream>
+using namespace std;
+
+void printArray(int arr[],int size){
+    for(int i=0; i<size; i++){
+        cout<<arr[i]<<" ";
+    }
+    cout<<endl;
+}
+
+int main(){
+  int arr[5]={2,6,4,8,9};
+  printArray(arr,5);
+  return 0;  
 }
