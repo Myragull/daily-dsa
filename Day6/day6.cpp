@@ -63,3 +63,24 @@ int ans1=power(a,b);
 cout<<"Answer : "<<ans1;
 return 0;
 }
+
+
+// 2 even or odd
+#include<iostream>
+using namespace std;
+
+string checker(int a){
+    if(a%2==0){
+     return "Even";
+    }else{
+      return"odd";
+    }
+}
+
+int main(){
+int n;
+cout<<"Enter value : ";
+cin>>n  ;
+cout<<"Answer : "<<checker(n);
+return 0;
+}
