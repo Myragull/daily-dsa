@@ -84,3 +84,47 @@ cin>>n  ;
 cout<<"Answer : "<<checker(n);
 return 0;
 }
+
+// 3
+
+#include <iostream>
+using namespace std;
+
+int factorial(int n)
+{
+    int f = 1;
+    for (int i = 1; i <= n; i++)
+    {
+        f = f * i;
+    }
+    return f;
+}
+
+int nCr(int n, int r)
+{
+    int nf=factorial(n);
+    int rf=factorial(r);
+
+    int diff = n - r;
+    int nrf=factorial(diff);
+
+    int nCr = nf / (rf * nrf);
+    return nCr;
+}
+
+int main()
+{
+    int n;
+    cout << "Enter N : ";
+    cin >> n;
+
+    int r;
+    cout << "Enter r : ";
+    cin >> r;
+
+    int ans = nCr(n, r);
+    cout << "nCr : " << ans;
+
+    return 0;
+}
+
