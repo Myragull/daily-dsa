@@ -180,3 +180,26 @@ int main(){
   printArray(arr,5);
   return 0;  
 }
+
+
+// finding min and max elements inside of an array
+
+#include<iostream>
+using namespace std;
+
+int Min(int arr[], int size){
+        int minNum=arr[0];
+    for(int i=0; i<5; i++){
+        if(minNum>arr[i]){
+           minNum= arr[i];
+        }
+    }
+            return minNum;
+    }
+
+int main(){
+
+    int arr[5]={1,33,3,99,10};
+        int result= Min(arr,5);
+        cout<<result;
+}
