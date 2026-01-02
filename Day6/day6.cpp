@@ -163,7 +163,6 @@ int main(){
 
 
 // array with functions 
-// in functions it is must to also gave the size of array in the parameter for iterations
 
 #include<iostream>
 using namespace std;
@@ -205,6 +204,9 @@ int main(){
 }
 
 
+
+
+
 // finding sum of element inside of array
 
 #include<iostream>
@@ -234,6 +236,12 @@ int main(){
 
    return 0; 
 }
+
+
+
+
+
+
 
 
 //  reversing elements of array
